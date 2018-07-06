@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="alert alert-danger" *ngIf="error">
+    {{ error.message }}
+  </div>
+
+  <div *ngIf="!userinfo">
+    <a class="btn btn-primary" href="{{loginUrl}}">Login</a>
+  </div>
+
+  <div *ngIf="userinfo">
+    <h3> Userinfo: </h3>
+    <div class="highlight">
+      <pre>{{userinfo | json}}</pre>
+     </div>
+    <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+  </div>
+</div>
