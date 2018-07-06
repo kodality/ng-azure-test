@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  azureReturnUrl: 'http://localhost:4201/auth',
+  azureReturnUrl: 'https://alfresco-dev.intra.ttu.ee/zure/auth',
   tenant: '3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57',
   clientId: '142a3733-584a-47f9-acba-8e945d366935'
 };
